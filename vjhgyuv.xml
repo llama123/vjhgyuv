@@ -28,7 +28,16 @@
                               </block>
                             </statement>
                             <next>
-                              <block type="movement_stop" id="193"></block>
+                              <block type="controls_if" id="298" inline="false">
+                                <value name="IF0">
+                                  <block type="sensor_spectrometer" id="282">
+                                    <field name="LIGHT">GREEN</field>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="movement_stop" id="193"></block>
+                                </statement>
+                              </block>
                             </next>
                           </block>
                         </next>
