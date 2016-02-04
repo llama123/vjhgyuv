@@ -8,15 +8,7 @@
           </block>
         </value>
         <next>
-          <block type="controls_if" id="67" inline="false">
-            <value name="IF0">
-              <block type="sensor_object" id="51">
-                <field name="OBJECT">LEFTFRONT</field>
-              </block>
-            </value>
-            <statement name="DO0">
-              <block type="movement_right" id="77"></block>
-            </statement>
+          <block type="movement_stop" id="108">
             <next>
               <block type="oled_drawtext" id="87">
                 <field name="TEXT">hey peeps emaan and vanshika r the best</field>
