@@ -1,44 +1,45 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="133" x="6" y="19">
-    <next>
-      <block type="robot_delay" id="262" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="269">
-            <field name="NUM">4000</field>
-          </block>
-        </value>
+  <block type="controls_repeat" id="322" inline="true" x="-28" y="-17">
+    <statement name="DO">
+      <block type="movement_forward" id="133">
         <next>
-          <block type="movement_reverse" id="153">
+          <block type="robot_delay" id="262" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="269">
+                <field name="NUM">4000</field>
+              </block>
+            </value>
             <next>
-              <block type="movement_left" id="163">
+              <block type="movement_right" id="173">
                 <next>
-                  <block type="movement_right" id="173">
+                  <block type="robot_delay" id="300" inline="true">
+                    <value name="DELAY">
+                      <block type="math_number" id="329">
+                        <field name="NUM">4000</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="movement_stutter" id="183">
+                      <block type="controls_if" id="216" inline="false">
+                        <value name="IF0">
+                          <block type="sensor_object" id="200">
+                            <field name="OBJECT">LEFTFRONT</field>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="oled_drawtext" id="258">
+                            <field name="TEXT">i eat llamas </field>
+                          </block>
+                        </statement>
                         <next>
-                          <block type="controls_if" id="216" inline="false">
+                          <block type="controls_if" id="298" inline="false">
                             <value name="IF0">
-                              <block type="sensor_object" id="200">
-                                <field name="OBJECT">LEFTFRONT</field>
+                              <block type="sensor_spectrometer" id="282">
+                                <field name="LIGHT">GREEN</field>
                               </block>
                             </value>
                             <statement name="DO0">
-                              <block type="oled_drawtext" id="258">
-                                <field name="TEXT">i eat llamas </field>
-                              </block>
+                              <block type="movement_stop" id="193"></block>
                             </statement>
-                            <next>
-                              <block type="controls_if" id="298" inline="false">
-                                <value name="IF0">
-                                  <block type="sensor_spectrometer" id="282">
-                                    <field name="LIGHT">GREEN</field>
-                                  </block>
-                                </value>
-                                <statement name="DO0">
-                                  <block type="movement_stop" id="193"></block>
-                                </statement>
-                              </block>
-                            </next>
                           </block>
                         </next>
                       </block>
@@ -50,6 +51,6 @@
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
