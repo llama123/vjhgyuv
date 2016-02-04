@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="comment_comment" id="260" x="44" y="15">
+  <block type="comment_comment" id="260" x="-1" y="20">
     <field name="TEXT">wut</field>
     <next>
       <block type="movement_forward" id="133">
@@ -19,20 +19,19 @@
                         <next>
                           <block type="movement_stutter" id="183">
                             <next>
-                              <block type="movement_stop" id="193">
-                                <next>
-                                  <block type="controls_if" id="216" inline="false">
-                                    <value name="IF0">
-                                      <block type="sensor_object" id="200">
-                                        <field name="OBJECT">LEFTFRONT</field>
-                                      </block>
-                                    </value>
-                                    <statement name="DO0">
-                                      <block type="oled_drawtext" id="258">
-                                        <field name="TEXT">i eat llamas </field>
-                                      </block>
-                                    </statement>
+                              <block type="controls_if" id="216" inline="false">
+                                <value name="IF0">
+                                  <block type="sensor_object" id="200">
+                                    <field name="OBJECT">LEFTFRONT</field>
                                   </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="oled_drawtext" id="258">
+                                    <field name="TEXT">i eat llamas </field>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="movement_stop" id="193"></block>
                                 </next>
                               </block>
                             </next>
