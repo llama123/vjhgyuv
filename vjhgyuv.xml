@@ -1,61 +1,12 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_repeat" id="1" inline="true" x="-28" y="-17">
+  <block type="controls_repeat" id="57" inline="true" x="-17" y="-2">
     <value name="TIMES">
-      <block type="math_number" id="2">
-        <field name="NUM">2</field>
+      <block type="math_number" id="64">
+        <field name="NUM">30</field>
       </block>
     </value>
     <statement name="DO">
-      <block type="movement_forward" id="3">
-        <next>
-          <block type="robot_delay" id="4" inline="true">
-            <value name="DELAY">
-              <block type="math_number" id="5">
-                <field name="NUM">4000</field>
-              </block>
-            </value>
-            <next>
-              <block type="movement_right" id="6">
-                <next>
-                  <block type="robot_delay" id="7" inline="true">
-                    <value name="DELAY">
-                      <block type="math_number" id="8">
-                        <field name="NUM">4000</field>
-                      </block>
-                    </value>
-                    <next>
-                      <block type="controls_if" id="9" inline="false">
-                        <value name="IF0">
-                          <block type="sensor_object" id="10">
-                            <field name="OBJECT">LEFTFRONT</field>
-                          </block>
-                        </value>
-                        <statement name="DO0">
-                          <block type="oled_drawtext" id="11">
-                            <field name="TEXT">i eat llamas </field>
-                          </block>
-                        </statement>
-                        <next>
-                          <block type="controls_if" id="12" inline="false">
-                            <value name="IF0">
-                              <block type="sensor_spectrometer" id="13">
-                                <field name="LIGHT">GREEN</field>
-                              </block>
-                            </value>
-                            <statement name="DO0">
-                              <block type="movement_stop" id="14"></block>
-                            </statement>
-                          </block>
-                        </next>
-                      </block>
-                    </next>
-                  </block>
-                </next>
-              </block>
-            </next>
-          </block>
-        </next>
-      </block>
+      <block type="movement_forward" id="24"></block>
     </statement>
   </block>
 </xml>
