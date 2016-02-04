@@ -1,13 +1,7 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
   <block type="movement_forward" id="24" x="11" y="-8">
     <next>
-      <block type="movement_forward" id="83">
-        <next>
-          <block type="multimedia_playwav" id="90">
-            <field name="WAV">hotline bling</field>
-          </block>
-        </next>
-      </block>
+      <block type="movement_forward" id="83"></block>
     </next>
   </block>
 </xml>
