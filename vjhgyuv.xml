@@ -11,7 +11,7 @@
           <block type="movement_stop" id="108">
             <next>
               <block type="oled_drawtext" id="87">
-                <field name="TEXT">hey peeps emaan and vanshika r the best</field>
+                <field name="TEXT">LLAMAS</field>
               </block>
             </next>
           </block>
